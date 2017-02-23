@@ -79,12 +79,17 @@ extern "C" {
 #define AB_SLOT_A_SUFFIX                "_a"
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
+<<<<<<< HEAD
 #define PTN_SWAP_LIST                   PTN_XBL, \
         "abl", "aboot", "aes", "apdp", "bootlocker", "cmnlib", "cmnlib32", \
         "cmnlib64", "devcfg", "dtbo", "hosd", "hyp", "laf", "keymaster", \
         "lockbooter", "msadp", "pmic", "rpm", "storsec", \
         "trusty", "tz", "vbmeta"
 #define AB_PTN_LIST PTN_SWAP_LIST, "boot", "system", "vendor", "modem"
+=======
+#define PTN_SWAP_LIST                   PTN_XBL, "sbl1", "rpm", "tz", "aboot", "hyp", "lksecapp", "keymaster", "cmnlib", "cmnlib32", "cmnlib64", "pmic", "apdp", "devcfg", "hosd", "keystore", "msadp"
+#define AB_PTN_LIST PTN_SWAP_LIST, "boot", "system", "vendor", "modem", "bluetooth"
+>>>>>>> 84c5f75... adding gpt-utils
 #define BOOT_DEV_DIR    "/dev/block/bootdevice/by-name"
 
 /******************************************************************************
