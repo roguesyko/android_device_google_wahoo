@@ -728,3 +728,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.gfx.angle.supported=true
+
+# MiFare Permissions file
+PRODUCT_COPY_FILES += \
+      frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
