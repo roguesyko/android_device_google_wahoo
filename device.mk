@@ -728,3 +728,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # MiFare Permissions file
 PRODUCT_COPY_FILES += \
       frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+
+# Build vendor img
+AB_OTA_PARTITIONS += \
+    vendor
