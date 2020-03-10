@@ -50,3 +50,7 @@ PRODUCT_COPY_FILES += \
 # Force triple frame buffers
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
