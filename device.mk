@@ -65,7 +65,12 @@ $(call inherit-product, device/google/wahoo/utils.mk)
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 26
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    device/google/wahoo/overlay \
+    device/google/wahoo/overlay-lineage
+
+# Exclude Lineage Overlays from RRO
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/wahoo/overlay-lineage/lineage-sdk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.hardware.rc:recovery/root/init.recovery.$(PRODUCT_HARDWARE).rc \
