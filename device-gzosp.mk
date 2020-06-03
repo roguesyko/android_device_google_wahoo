@@ -12,9 +12,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/wahoo/overlay-lineage
-
 # Snap
 PRODUCT_PACKAGES += \
     Snap
@@ -39,9 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.oem_unlock.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/misc \
     ro.hardware.egl=adreno \
     ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv
-
-# Setting vendor SPL
-VENDOR_SECURITY_PATCH := "2020-04-05"
 
 # MiFare Permissions file
 PRODUCT_COPY_FILES += \
